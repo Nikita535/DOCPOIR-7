@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    font-size: 0.8em;
+    color: black;
+    overflow-y: hidden;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+}
+
+.icon.sunny {
+    background-image: url("img/2.PNG");
+}
+
+.icon.cloudy {
+    background-image: url("img/4.PNG");
+}
+
+
+.weather-forecast {
+    padding: 10px 10px 0 10px;
+    display: inline-block;
+}
+
+.location {
+    font-size: 3em;
+    color: black;
+}
+
+.current {
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.current .visual {
+    width: 50%;
+    float: left;
+}
+
+.current .description {
+    width: 50%;
+    float: left;
+}
+
+.visual .icon {
+    width: 64px;
+    height: 64px;
+}
+
+.temp {
+    font-size: 2.5em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.scale {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 6px;
+    color: black;
+}
+
+.wind:before {
+    content: "Ветер: ";
+    color: grey;
+}
+
+.precip:before {
+    content: "Вероятность осадков: ";
+    color: grey;
+}
+
+.humidity:before {
+    content: "Влажность: ";
+    color: grey;
+}
+
+.seven-day div {
+    vertical-align: middle;
+}
+
+.seven-day-fc{
+    margin: 0 -11px -1px -11px;
+    padding: 10px;
+}
+
+.seven-day-fc div {
+    display: inline-block;
+}
+
+.seven-day-fc .date {
+    font-weight: bold;
+    color: black;
+}
+
+.seven-day-fc .icon {
+    width: 50px;
+    height: 50px;
+
+}
+
+.seven-day-fc .seven-day-temp {
+    text-align: center;
+}
+
+.seven-day-fc .temp-high {
+    color: black;
+}
+
+.seven-day-fc .temp-low {
+    color: grey;
+}
+
+.seven-day-fc .temp-high,
+.seven-day-fc .temp-low {
+    display: block;
+}
+
